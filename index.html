@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thiago | Site Pessoal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="container">
+      <p class="eyebrow">Site Pessoal</p>
+      <h1>Thiago</h1>
+      <p class="subtitle">Administração &amp; Programação</p>
+      <nav class="nav">
+        <a href="#sobre">Sobre mim</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section id="sobre" class="section">
+      <h2>Sobre mim</h2>
+      <p>
+        Sou Thiago, estudante em São Paulo, atualmente cursando o ensino médio
+        junto com um curso complementar. Tenho interesse nas áreas de
+        administração e programação, e sigo desenvolvendo conhecimento nesses
+        dois caminhos com o objetivo de construir uma carreira sólida — seja
+        aplicando gestão e organização a projetos, seja colocando a mão no
+        código para criar soluções.
+      </p>
+      <p>
+        Este site é onde registro minha trajetória: os estudos, os projetos
+        que venho desenvolvendo e os próximos passos rumo aos meus objetivos
+        profissionais.
+      </p>
+    </section>
+
+    <section id="contato" class="section">
+      <h2>Contato</h2>
+      <p>Você pode acompanhar meus projetos e me encontrar por aqui:</p>
+      <a class="contact-link" href="https://github.com/conceicaothiago491-svg" target="_blank" rel="noopener noreferrer">
+        <span class="icon">&#128187;</span> GitHub: conceicaothiago491-svg
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Thiago. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
