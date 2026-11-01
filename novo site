@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thiago — Administração e programação</title>
+<meta name="description" content="Página pessoal de Thiago: administração e programação, apresentação e contato.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f6f8f7;
+    --ink: #17252a;
+    --muted: #4d6168;
+    --rule: #cfdad8;
+    --accent: #0b6e66;
+    --accent-ink: #ffffff;
+    --font: "Bricolage Grotesque", "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #101a1c;
+      --ink: #e8f0ee;
+      --muted: #a2b5b4;
+      --rule: #263639;
+      --accent: #4cc2b5;
+      --accent-ink: #0b1517;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font);
+    font-size: 1.125rem;
+    line-height: 1.65;
+    /* pauta de caderno contábil: linhas horizontais discretas */
+    background-image: repeating-linear-gradient(
+      to bottom, transparent 0, transparent 35px, var(--rule) 35px, var(--rule) 36px);
+  }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 0 1.5rem; }
+
+  header.top { padding: 1.25rem 0; }
+  header.top .wrap { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); }
+  nav a { margin-left: 1.25rem; color: var(--ink); text-decoration: none; font-weight: 500; }
+  nav a:hover { color: var(--accent); }
+
+  .hero { padding: clamp(3rem, 12vw, 7rem) 0 clamp(2.5rem, 8vw, 4.5rem); }
+  .hero h1 {
+    font-size: clamp(4.5rem, 21vw, 11rem);
+    line-height: .9;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    margin: 0 0 1.5rem;
+  }
+  .hero p.lead {
+    font-size: clamp(1.25rem, 3.4vw, 1.6rem);
+    line-height: 1.4;
+    max-width: 30ch;
+    margin: 0 0 2rem;
+    background: var(--paper);
+    padding: .25rem 0;
+  }
+  .btn {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--accent-ink);
+    padding: .8rem 1.4rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .btn:hover { filter: brightness(1.1); }
+  .btn:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+
+  section { background: var(--paper); padding: 3rem 0; border-top: 1px solid var(--rule); }
+  h2 { font-size: 1.75rem; line-height: 1.2; margin: 0 0 1rem; letter-spacing: -0.01em; }
+  section p { max-width: 62ch; margin: 0 0 1rem; }
+  .direcao { list-style: none; padding: 0; margin: 1.5rem 0 0; display: grid; gap: 1rem; }
+  .direcao li { padding-left: 1rem; border-left: 4px solid var(--accent); max-width: 62ch; }
+  .direcao strong { display: block; }
+
+  footer { background: var(--paper); border-top: 1px solid var(--rule); padding: 1.5rem 0 2.5rem; color: var(--muted); font-size: 1rem; }
+  footer p { margin: 0; }
+  @media (max-width: 30rem) { nav a { margin-left: .9rem; } }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio">Thiago</a>
+    <nav aria-label="Seções">
+      <a href="#sobre">Sobre mim</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <div class="wrap hero">
+    <h1>Thiago</h1>
+    <p class="lead">Administração e programação, aprendendo a unir as duas.</p>
+    <a class="btn" href="#contato">Ver contato</a>
+  </div>
+
+  <section id="sobre">
+    <div class="wrap">
+      <h2>Sobre mim</h2>
+      <p>Olá, eu sou o Thiago. Quero construir minha carreira entre duas áreas: administração, que me ensina a organizar pessoas, processos e recursos, e programação, que me dá ferramentas para tornar esse trabalho mais claro e eficiente.</p>
+      <p>Estou aprendendo na prática, criando e publicando projetos próprios. Este site é um deles: ele é publicado a partir de um repositório meu no GitHub.</p>
+      <ul class="direcao">
+        <li><strong>O que me interessa</strong>Entender como uma organização funciona e usar tecnologia para melhorar o que for possível.</li>
+        <li><strong>Como eu aprendo</strong>Construindo, errando, ajustando e registrando o caminho no GitHub.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="wrap">
+      <h2>Contato</h2>
+      <p>Meus projetos e o código deste site estão no GitHub. É por lá que você me encontra.</p>
+      <a class="btn" href="https://github.com/conceicaothiago491-svg" target="_blank" rel="noopener">Abrir meu GitHub</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap"><p>© Thiago. Página feita em HTML e CSS puros.</p></div>
+</footer>
+
+</body>
+</html>
