@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de programação do Thiago: estudos de HTML, CSS e projetos em desenvolvimento.">
+  <meta name="theme-color" content="#10162a">
+  <title>Programação | Thiago</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="Voltar ao site pessoal de Thiago">Thiago<span>.</span></a>
+      <nav aria-label="Navegação principal">
+        <a href="../index.html">Início</a><a href="#aprendizado">Aprendizado</a><a href="#projeto">Projeto</a><a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="titulo-principal">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow"><span class="status" aria-hidden="true"></span> Meu caminho na tecnologia</p>
+          <h1 id="titulo-principal">Aprendendo a programar. <span>Construindo aos poucos.</span></h1>
+          <p class="intro">Sou Thiago e estou começando na programação. Aqui compartilho o que estou estudando e os projetos que desenvolvo durante esse processo.</p>
+          <a class="button" href="#projeto">Conheça meu projeto <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="code-card" aria-label="Resumo dos meus estudos">
+          <p class="code-caption">meu-perfil.txt</p>
+          <pre><code><span class="code-comment">/* em aprendizado */</span>
+<span class="code-key">nome</span>       = <span class="code-value">"Thiago"</span>;
+<span class="code-key">estudando</span>  = <span class="code-value">["HTML", "CSS"]</span>;
+<span class="code-key">objetivo</span>   = <span class="code-value">"criar soluções"</span>;</code></pre>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="aprendizado" aria-labelledby="aprendizado-titulo">
+      <div class="container">
+        <p class="eyebrow">Minha base</p><h2 id="aprendizado-titulo">O que estou estudando</h2>
+        <div class="cards">
+          <article class="card"><span class="number" aria-hidden="true">01</span><h3>HTML</h3><p>Estruturar o conteúdo de páginas de forma clara, semântica e acessível.</p></article>
+          <article class="card"><span class="number" aria-hidden="true">02</span><h3>CSS</h3><p>Trabalhar com cores, tipografia e layouts que funcionam em diferentes telas.</p></article>
+          <article class="card"><span class="number" aria-hidden="true">03</span><h3>Prática</h3><p>Aprender criando, testando e melhorando projetos reais passo a passo.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="section section-alt" id="projeto" aria-labelledby="projeto-titulo">
+      <div class="container project-layout">
+        <div><p class="eyebrow">Feito durante os estudos</p><h2 id="projeto-titulo">Meu primeiro site</h2></div>
+        <div class="project-info"><p>Este portfólio é um dos meus exercícios de HTML e CSS. Estou praticando organização de conteúdo, links, acessibilidade e adaptação para celular.</p><a class="text-link" href="https://github.com/conceicaothiago491-svg/Thiago" target="_blank" rel="noopener noreferrer">Ver o código no GitHub <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+    <section class="section contact" id="contato" aria-labelledby="contato-titulo">
+      <div class="container contact-inner"><div><p class="eyebrow">Vamos nos conectar</p><h2 id="contato-titulo">Acompanhe minha evolução.</h2><p>Vou continuar atualizando esta página conforme avanço nos estudos.</p></div><a class="button button-light" href="https://github.com/conceicaothiago491-svg" target="_blank" rel="noopener noreferrer">Meu GitHub <span aria-hidden="true">↗</span></a></div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><a href="../index.html">← Voltar ao site pessoal</a><p>© <span id="year">2026</span> Thiago · HTML e CSS</p></div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
